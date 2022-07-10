@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Index</title>
+    </head>
+    <body>
+        <header class="navigaion">
+            <img class="logo" src="images/logo.jpg" alt="logo">
+            <h3 class="name">Сотир Собралиев</h3>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">Зa мене</a></li>
+                    <li><a href="#education">Образование</a></li>
+                    <li><a href="#achievements">Постигнувања</a></li>
+                    <li><a href="#hobbies">Хоби</a></li>
+                    <li><a href="#contact">Контакт</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container_1">
+            <div class="text">
+            <h1>Здраво, јас сум Сотир!</h1><br>
+            <h4>Студент на Факултетот за информатички науки и компјутерско инжењерство
+            <br><br>при Универзитетот "Св. Кирил и Методиј"</h4>
+        </div>
+        </div>
+
+        <br> <br> <hr id="about"> <br> <br> <br>
+        <div class="container_2">
+            <div class="my_picture">
+                <img src="images/me.jpg" alt="me">
+            </div>
+
+            <div class="about">
+                <h1>За мене</h1>
+                <p>Моето име е Сотир Собралиев. Рoден на 17 Ноември 2002 во Скопје. Завршив основно училиште во ООУ "Јосип Броз Тито" Валандово. Средното образование го завршив во СЕТУ "Михајло Пупин" Скопје. Сега имам 19 години и сум редовен студент во прва година на Факултетот за информатички науки и компјутерско инженерство при Универзитетот "Св. Кирил и Методиј".</p>
+            </div>
+        </div>
+        <br> <br> <hr id="education">
+        <h1 style="text-align: center; color:white">Образование</h1>
+        <div class="container_3">
+            <div class="card">
+                <img src="images/elementary.jpg" alt="elementary">
+            </div>
+
+            <h2><br>ООУ "Јосип Броз Тито"  Валандово
+            <br><br>2008-2017</h2>
+
+            <div class="card">
+                <img src="images/high_school.jpg" alt="high_school">
+            </div>
+
+            <h2><br>СЕТУ "Михајло Пупин"  Скопје
+                <br><br>2017-2021</h2>
+
+            <div class="card">
+                <img src="images/faculty.png" alt="faculty">
+            </div>
+
+            <h2 style="border-left: solid black 1px">ФИНКИ <br>при Универзитетот <br> "Св. Кирил и Методиј"  Скопје
+                <br><br>2021-&infin;</h2>
+        </div>
+        <br> <hr id="achievements">
+        <h1 style="text-align: center; color:white">Постигнувања</h1>
+        <br>
+        <div class="container_4">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/certificates/1.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/certificates/2.jpg" style="width: auto">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/certificates/3.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/certificates/4.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/certificates/5.jpg" style="width: auto">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/certificates/6.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br> <hr id="hobbies">
+        <h1 style="text-align: center; color:white">Хоби</h1>
+        <br>
+        <div class="container_5">
+            <div class="card">
+                <img src="images/hiking.jpg">
+                <p><b>ПЛАНИНАРЕЊЕ</b></p>
+            </div>
+
+            <div class="card">
+                <img src="images/movies.jpg">
+                <p><b>ФИЛМОВИ</b></p>
+            </div>
+
+            <div class="card">
+                <img src="images/swimming.jpg">
+                <p><b>ПЛИВАЊЕ</b></p>
+            </div>
+        </div>
+
+        <br>
+        <br> <hr id="contact">
+        <h1 style="text-align: center; color:white">Контакт</h1>
+
+        <div class="container_6">
+            <form action="/">
+                <label for="fname">Име</label>
+                <input type="text" id="fname" name="firstname" placeholder="Вашето име..">
+
+                <label for="lname">Презиме</label>
+                <input type="text" id="lname" name="lastname" placeholder="Вашето презиме..">
+
+                <label for="subject">Тема</label>
+                <textarea id="subject" name="subject" placeholder="Напишете нешто.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <br>
+        <br> <hr>
+        <div class="footer">
+            <a href="https://www.facebook.com/sotir.sobraliev" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/sotir17s/" target="_blank" class="fa fa-instagram"></a>
+
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+    </body>
+</html>
